@@ -1,6 +1,6 @@
-*/target/*
-*/test/*
-/.settings
-.DS_Store
-.classpath
-.project
+target/
+test-output/
+.settings/
+*.DS_Store
+*.classpath
+*.project
