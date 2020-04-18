@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.MoneyTransfer.AppTest">
+      <class name="com.automation.Tests.GetValue_Xoom">
         <methods>
-          <include name="Transfast"/>
-          <include name="browser"/>
-          <include name="Remitly"/>
+          <include name="getValue"/>
+          <include name="beforeAllClasses"/>
         </methods>
-      </class> <!-- com.test.MoneyTransfer.AppTest -->
+      </class> <!-- com.automation.Tests.GetValue_Xoom -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
