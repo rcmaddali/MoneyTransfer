@@ -2,65 +2,33 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-18T21:23:20Z" name="Suite" finished-at="2020-04-18T21:23:26Z" duration-ms="5378">
+  <suite started-at="2020-04-18T22:48:41Z" name="Suite" finished-at="2020-04-18T22:48:46Z" duration-ms="5056">
     <groups>
     </groups>
-    <test started-at="2020-04-18T21:23:20Z" name="Test" finished-at="2020-04-18T21:23:26Z" duration-ms="5378">
+    <test started-at="2020-04-18T22:48:41Z" name="Test" finished-at="2020-04-18T22:48:46Z" duration-ms="5056">
       <class name="com.automation.Tests.GetValue_Xoom">
-        <test-method is-config="true" signature="beforeAllClasses()[pri:0, instance:com.automation.Tests.GetValue_Xoom@481a15ff]" started-at="2020-04-18T16:23:20Z" name="beforeAllClasses" finished-at="2020-04-18T16:23:24Z" duration-ms="3925" status="PASS">
+        <test-method is-config="true" signature="beforeAllClasses()[pri:0, instance:com.automation.Tests.GetValue_Xoom@306279ee]" started-at="2020-04-18T17:48:41Z" name="beforeAllClasses" finished-at="2020-04-18T17:48:44Z" duration-ms="3838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeAllClasses -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.Tests.GetValue_Xoom@481a15ff]" started-at="2020-04-18T16:23:24Z" name="setup" finished-at="2020-04-18T16:23:24Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.Tests.GetValue_Xoom@306279ee]" started-at="2020-04-18T17:48:44Z" name="setup" finished-at="2020-04-18T17:48:44Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getValue()[pri:0, instance:com.automation.Tests.GetValue_Xoom@481a15ff]" started-at="2020-04-18T16:23:24Z" name="getValue" finished-at="2020-04-18T16:23:26Z" duration-ms="1318" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        <test-method signature="getValue()[pri:0, instance:com.automation.Tests.GetValue_Xoom@306279ee]" started-at="2020-04-18T17:48:44Z" name="getValue" finished-at="2020-04-18T17:48:46Z" duration-ms="1111" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[invalid selector: The result of the xpath expression "//*[@id="js-ui-content-update-animation-item-0"]/p/text()" is: [object Text]. It should be an element.
-  (Session info: chrome=80.0.3987.163)
-  (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.15.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ravis-MacBook-Pro.local', ip: '2605:6000:638f:f800:5d16:8930:99e4:32a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/dq/mrp27lqd075...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 80.0.3987.163, webStorageEnabled: true}
-Session ID: b52e5a5da896e905cb041a9ee541743d
-*** Element info: {Using=xpath, value=//*[@id="js-ui-content-update-animation-item-0"]/p/text()}]]>
+              <![CDATA[expected [75.9247] but found [[[ChromeDriver: chrome on MAC (f3b0416973678e3bae470cdf51a19ab4)] -> xpath: //*[@id="js-ui-content-update-animation-item-0"]/p]]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression "//*[@id="js-ui-content-update-animation-item-0"]/p/text()" is: [object Text]. It should be an element.
-  (Session info: chrome=80.0.3987.163)
-  (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.15.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ravis-MacBook-Pro.local', ip: '2605:6000:638f:f800:5d16:8930:99e4:32a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/dq/mrp27lqd075...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 80.0.3987.163, webStorageEnabled: true}
-Session ID: b52e5a5da896e905cb041a9ee541743d
-*** Element info: {Using=xpath, value=//*[@id="js-ui-content-update-animation-item-0"]/p/text()}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.automation.Pages.Xoom.getRate(Xoom.java:35)
-	at com.automation.Tests.GetValue_Xoom.getValue(GetValue_Xoom.java:33)
+              <![CDATA[java.lang.AssertionError: expected [75.9247] but found [[[ChromeDriver: chrome on MAC (f3b0416973678e3bae470cdf51a19ab4)] -> xpath: //*[@id="js-ui-content-update-animation-item-0"]/p]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.automation.Pages.Xoom.getRate(Xoom.java:36)
+	at com.automation.Tests.GetValue_Xoom.getValue(GetValue_Xoom.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,15 +60,15 @@ Session ID: b52e5a5da896e905cb041a9ee541743d
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getValue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.Tests.GetValue_Xoom@481a15ff]" started-at="2020-04-18T16:23:26Z" name="tearDown" finished-at="2020-04-18T16:23:26Z" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.Tests.GetValue_Xoom@306279ee]" started-at="2020-04-18T17:48:46Z" name="tearDown" finished-at="2020-04-18T17:48:46Z" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.Tests.GetValue_Xoom@481a15ff]" started-at="2020-04-18T16:23:26Z" name="tearDown" finished-at="2020-04-18T16:23:26Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.Tests.GetValue_Xoom@306279ee]" started-at="2020-04-18T17:48:46Z" name="tearDown" finished-at="2020-04-18T17:48:46Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

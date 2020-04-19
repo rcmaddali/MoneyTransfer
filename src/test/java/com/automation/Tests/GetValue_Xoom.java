@@ -28,8 +28,10 @@ public class GetValue_Xoom extends BaseTest {
 
 		xoomTransfer.clickOnDropDwn();
 		xoomTransfer.chooseCountry();
-		xoomTransfer.getRate();
-
+		xoomTransfer.enterAmount();
+		int INR = xoomTransfer.getAmount();
+		String rate = xoomTransfer.getRate(INR);
+		Assert.assertEquals(rate, "75.9245");
 	}
 
 	/*
