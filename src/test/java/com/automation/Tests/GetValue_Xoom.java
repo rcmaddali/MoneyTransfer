@@ -24,12 +24,12 @@ public class GetValue_Xoom extends BaseTest {
 	}
 
 	@Test
-	public void getValue() {
+	public void getValue() throws InterruptedException {
 
 		xoomTransfer.clickOnDropDwn();
 		xoomTransfer.chooseCountry();
 		xoomTransfer.enterAmount();
-		int INR = xoomTransfer.getAmount();
+		float INR = xoomTransfer.getAmount();
 		String rate = xoomTransfer.getRate(INR);
 		Assert.assertEquals(rate, "75.9245");
 	}

@@ -27,22 +27,27 @@ public class Xoom extends BasePage {
 		WebDriverHelper.implicitWaits();
 	}
 	
-	public void enterAmount() {
+	public void enterAmount() throws InterruptedException {
 		
 		WebElement sendAmount = driver.findElement(By.id("sendAmount"));
-		sendAmount.sendKeys("2000");
+		sendAmount.clear();
+		sendAmount.sendKeys("2000.00");
 		WebDriverHelper.implicitWaits();
+		Thread.sleep(5000);
 	}
 	
-	public int getAmount() {
+	public float getAmount() {
 		
 		WebElement receiveAmount = driver.findElement(By.id("receiveAmount"));
-		int INR = Integer.parseInt(receiveAmount.getText());
+		boolean b = receiveAmount.isDisplayed();
+		System.out.println(b);
+		System.out.println(receiveAmount.getText());
+		float INR = Float.parseFloat(receiveAmount.getAttribute("value"));
 		return INR;
 		
 	}
 
-	public String getRate(int INR) {
+	public String getRate(float INR) {
 
 		float rate;
 		rate = Float.valueOf(INR/ 2000);
