@@ -26,14 +26,33 @@ public class Xoom extends BasePage {
 		chooseCountryfromDrpDwn.click();
 		WebDriverHelper.implicitWaits();
 	}
+	
+	public void enterAmount() throws InterruptedException {
+		
+		WebElement sendAmount = driver.findElement(By.id("sendAmount"));
+		sendAmount.clear();
+		sendAmount.sendKeys("2000.00");
+		WebDriverHelper.implicitWaits();
+		Thread.sleep(5000);
+	}
+	
+	public float getAmount() {
+		
+		WebElement receiveAmount = driver.findElement(By.id("receiveAmount"));
+		boolean b = receiveAmount.isDisplayed();
+		System.out.println(b);
+		System.out.println(receiveAmount.getText());
+		float INR = Float.parseFloat(receiveAmount.getAttribute("value"));
+		return INR;
+		
+	}
 
-	public void getRate() {
+	public String getRate(float INR) {
 
-		String rate = driver.findElement(By.xpath("//*[@id=\"js-ui-content-update-animation-item-0\"]/p/text()"))
-				.toString();
-//		String rate = rates.get(0).toString();
+		float rate;
+		rate = Float.valueOf(INR/ 2000);
 		System.out.println(rate);
-		Assert.assertEquals(rate, "75.9247");
+		return String.valueOf(rate);
 	}
 
 }
