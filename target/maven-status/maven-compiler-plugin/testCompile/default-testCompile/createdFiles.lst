@@ -1,6 +1,5 @@
-com/automation/Pages/Remitly.class
 com/automation/Utils/BaseTest.class
 com/automation/Pages/Xoom.class
-com/automation/Utils/WebDriverHelper.class
-com/automation/Tests/GetValue_Xoom.class
 com/automation/Pages/BasePage.class
+com/automation/Pages/Remitly.class
+com/automation/Utils/WebDriverHelper.class
