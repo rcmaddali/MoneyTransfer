@@ -1,21 +1,14 @@
 package com.automation.Tests;
 
 import org.testng.annotations.Test;
-
 import com.automation.Pages.Xoom;
 import com.automation.Utils.BaseTest;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
+import com.automation.Utils.CreateJSONFile;
+import com.google.gson.JsonObject;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 
-public class GetValue_Xoom extends BaseTest {
+public class XoomTransferRate extends BaseTest {
 
-	BaseTest test;
 	Xoom xoomTransfer;
 
 	@BeforeClass
@@ -24,15 +17,25 @@ public class GetValue_Xoom extends BaseTest {
 	}
 
 	@Test
-	public void getValue() throws InterruptedException {
+	public void getXoomRate() throws InterruptedException {
 
+		JsonObject jsonObject = new  JsonObject();
+		
 		xoomTransfer.clickOnDropDwn();
 		xoomTransfer.chooseCountry();
 		xoomTransfer.enterAmount();
 		float INR = xoomTransfer.getAmount();
 		String rate = xoomTransfer.getRate(INR);
-		Assert.assertEquals(rate, "75.9245");
+		
+		jsonObject.addProperty("Rate", rate);
+		jsonObject.addProperty("Send Country", "US");
+		jsonObject.addProperty("Receive Country", "India");
+		jsonObject.addProperty("Website", "Xoom");
+		CreateJSONFile.fileWrite(jsonObject);
+		
 	}
+	
+	
 
 	/*
 	 * @BeforeMethod public static void browser() {
